@@ -23,7 +23,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "postinstall": "npm run build"
-  }
+  },
   "scripts": {
     "build:css": "node-sass src/assets/styles/sass/ -o src/assets/styles/css/",
     "watch:css": "npm run build:css && node-sass src/assets/styles/sass/ -o src/assets/styles/css/ --watch --recursive",
