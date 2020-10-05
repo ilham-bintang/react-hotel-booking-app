@@ -5,6 +5,7 @@ import { Route, Switch } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Home from '../pages/Home';
 import Rooms from '../pages/Rooms';
+import Payment from '../pages/Payments';
 import SingleRoom from '../pages/SingleRoom';
 import ErrorPage from '../pages/ErrorPage';
 
@@ -16,6 +17,7 @@ const App: React.FC = () => {
         <Route exact path="/" component={Home} />
         <Route exact path="/rooms/" component={Rooms} />
         <Route exact path="/rooms/:slug" component={SingleRoom} />
+        <Route exact path="/book/:slug" component={Payment} />
         <Route component={ErrorPage} />
       </Switch>
     </React.Fragment>

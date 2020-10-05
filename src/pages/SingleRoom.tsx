@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import defaultImg from "../assets/images/room-1.jpeg";
 import Banner from '../components/Banner';
+
 import { Link } from 'react-router-dom';
 import { RoomContext } from '../store/context';
 import StyledCover from '../components/StyledCover';
@@ -62,6 +63,8 @@ export default class SingleRoom extends Component<IPropsSingleRoom, IStateSingle
                        <article className="desc">
                            <h3>details</h3>
                            <p>{description}</p>
+                           <br/>
+                           <Link to={`/book/${this.state.slug}`} className="btn-primary">Book Now!</Link>
                        </article>
                        <article className="info">
                            <h3>info</h3>
